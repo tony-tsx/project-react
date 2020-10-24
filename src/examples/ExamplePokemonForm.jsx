@@ -1,5 +1,5 @@
 import React, { Component, createRef } from 'react'
-import LoadingComponent from './Loading'
+import LoadingComponent from '../components/Loading'
 
 import pokemons from '../data/pokemons.json'
 
