@@ -1,5 +1,4 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-$url: "https://www.nintendo.com/content/dam/noa/pt_BR/merchandising/feature-banner/super-smash-bros--ultimate/super-smash-bros-ultimate-switch-hero.jpg";
 
 body, html {
   margin: 0;
@@ -24,11 +23,6 @@ body, html {
     color: white;
   }
   &-image {
-    background-image:
-      linear-gradient(
-        rgba(0, 0, 0, 0.5), 
-        rgba(0, 0, 0, 0.5)
-      ), url( $url );
     height: 100%;
 
     background-position: center;
@@ -36,4 +30,16 @@ body, html {
     background-size: cover;
     position: relative;
   }
+}
+
+.loading-wrapper-absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000040;
 }

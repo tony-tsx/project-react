@@ -4,34 +4,11 @@ import PropTypes from 'prop-types'
 class HeaderComponent extends Component {
   constructor( props ) {
     super( props )
-    console.log( 'o construtor foi chamado no HeaderComponent' )
-  }
-  componentWillMount() {
-    console.log( 'o componentWillMount foi chamado no HeaderComponent' )
-  }
-  componentDidMount() {
-    console.log( 'o componentDidMount foi chamado no HeaderComponent' )
-  }
-  componentWillReceiveProps( nextProps ) {
-    console.log( 'o componentWillReceiveProps foi chamado no HeaderComponent' )
-    console.log( nextProps, this.props )
   }
   shouldComponentUpdate( nextProps, nextState ) {
-    console.log( 'o shouldComponentUpdate foi chamado no HeaderComponent' )
-    console.log( nextProps, this.props )
-    return true
-  }
-  componentWillUpdate() {
-    console.log( 'o componentWillUpdate foi chamado no HeaderComponent' )
-  }
-  componentDidUpdate() {
-    console.log( 'o componentDidUpdate foi chamado no HeaderComponent' )
-  }
-  componentWillUnmount() {
-    console.log( 'o componentWillUnmount foi chamado no HeaderComponent' )
+    return false
   }
   render() {
-    console.log( 'o render foi chamado no HeaderComponent' )
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand" href="#">{this.props.title}</a>
