@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
+import reactLogo from '../assets/react.png'
+import styled from 'styled-components'
+
+console.log( reactLogo )
 class Header extends Component {
   constructor( props ) {
     super( props )
@@ -9,7 +13,7 @@ class Header extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <NavLink className="navbar-brand" to="/">
-          {this.props.title}
+          <Img src={reactLogo} />
         </NavLink>
         <button className="navbar-toggler" type="button" data-toggle="collapse" >
           <span className="navbar-toggler-icon"></span>
@@ -33,6 +37,10 @@ class Header extends Component {
     )
   }
 }
+
+const Img = styled.img`
+  max-width: 30px;
+`
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,

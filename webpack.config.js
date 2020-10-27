@@ -6,6 +6,7 @@ module.exports = {
   entry: path.resolve( 'src', 'index.jsx' ),
   output: {
     path: path.resolve( 'dist' ),
+    publicPath: '/'
   },
   module: {
     rules: [ {
@@ -14,6 +15,9 @@ module.exports = {
     }, {
       test: /\.s[ac]ss$/,
       use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
+    }, {
+      test: /\.(png|jpe?g|gif)$/,
+      loader: 'file-loader'
     } ]
   },
   plugins: [
