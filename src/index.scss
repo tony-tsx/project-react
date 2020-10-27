@@ -32,6 +32,11 @@ body, html {
   }
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
 .loading-wrapper-absolute {
   position: absolute;
   top: 0;

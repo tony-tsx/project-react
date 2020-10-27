@@ -25,7 +25,7 @@ class Alert extends DefaultBootstrap {
     return rest
   }
   render() {
-    return <button className={this.getClassNames()} {...this.getRestProps()} />
+    return <div className={this.getClassNames()} {...this.getRestProps()} />
   }
 }
 

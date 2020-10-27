@@ -7,7 +7,6 @@ class PokemonTable extends Component {
     return this.props.pokemons.some( pokemon => pokemon.name === name )
   }
   render() {
-    console.log( 'render PokemonTable' )
     return (
       <Table
         heads={ [ 'ID', 'Nome', 'Peso', 'Altura', 'Ataque', 'Defesa' ] }

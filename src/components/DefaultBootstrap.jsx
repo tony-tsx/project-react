@@ -11,4 +11,6 @@ class DefaultBootstrap extends Component {
   }
 }
 
+window.classnames = classnames
+
 export default DefaultBootstrap
